@@ -6,13 +6,21 @@ def great(list_range):
     # iterate the list
     for item in l:
         # divide by 5
+        if item == 0:
+            continue
         if item%5 == 0:
             # if remainder equals 0, then add to the list
+            y.append(item)
+            continue
+        if item%3 == 0:
+            y.append(item)
+            continue
+        if item%2 == 0:
             y.append(item)
     return y
 
 
-print great(10000)
+print great(51)
 
 
     # divide by 2

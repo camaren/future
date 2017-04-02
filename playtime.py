@@ -1,6 +1,6 @@
-def great():
+def great(list_range):
 
-    l = [x for x in range(100)]
+    l = [x for x in range(list_range)]
     # initializing an empty list
     y = []
     # iterate the list
@@ -12,7 +12,7 @@ def great():
     return y
 
 
-print great()
+print great(10000)
 
 
     # divide by 2
